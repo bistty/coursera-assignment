@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 12px;
+    font-family: 'Baloo Chettan 2', cursive;
+    
+}
+#menu{
+    margin: 3rem ;
+    line-height: 1.3rem;
+    width: 90%;
+    text-align: center;
+
+}
+.menu-heading{
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem auto;
+    word-spacing: 0.6rem;
+    margin-bottom: 3rem;
+}
+.text{
+    background: grey; 
+    margin: 2rem;
+    margin-top: 0rem;
+    padding: 2rem;
+    padding-top: 0rem;
+    width: 90%;
+    font-size: .8rem;
+    font-weight: bolder;
+    border: 2px solid black;
+    position: relative;
+    display: inline-block
+}
+
+.pin{
+    padding-top: 3rem;
+}
+.left1,.left2,.left3{
+    margin: 0rem;
+    margin-bottom: 1rem;
+    width: 40%;
+    padding:0.4rem 2rem 0.5rem 2rem;
+    font-size: 1.2rem;
+    background: palevioletred;
+    display: inline-block;
+    position: absolute;
+    right: 0rem;
+    text-align: center;
+    border: 1px solid black;
+    border-top: 0px;
+    border-right: 0px;
+}
+
+.left2{
+    background: red;
+}
+
+.left3{
+    background:rgb(240, 183, 79);
+}
+
+@media (min-width:769px) and (max-width:991px){
+    
+    .menu1{
+  width: 43.5%;
+  float: left;
+  margin-right: 0rem;
+    }
+    .menu2{
+        width: 43.5%;
+        float: right;
+        margin-left: 0rem;
+    }
+    .menu3{
+        clear: both;
+        width: 94%;
+    }
+}
+
+@media (min-width:992px){
+    .text{
+
+        margin: 1rem 1.2rem 1.5rem 1.2rem;
+    }
+    .menu1{
+  width: 29%;
+  float: left;
+  margin-right: 0rem;
+    }
+    .menu2{
+        width: 29%;
+        float: left;
+        margin-right: 0rem;
+        
+    }
+    .menu3{
+    float: left;
+        width: 29%;
+    }
+}
+
