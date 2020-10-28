@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Baloo Chettan 2', cursive;
+    
+}
+main{
+    margin: 2rem auto;
+    line-height: 1.3rem;
+    width: 98%;
+    text-align: center;
+}
+.heading{
+    font-size: 175%;
+    text-align: center;
+    margin: 2rem auto;
+    word-spacing: 0.6rem;
+    margin-bottom: 3rem;
+}
+
+section{
+    background: grey; 
+    margin: 2rem;
+    margin-top: 0rem;
+    padding-top: 0rem;
+    font-weight: 600;
+    border: 2px solid black;
+    position: relative;
+    display: inline-block
+}
+#chicken,#beef,#sushi{
+    margin: 0rem;
+    margin-bottom: 1rem;
+    padding:0.4rem 2rem 0.5rem 2rem;
+    font-size: 125%;
+    width: 40%;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    border: 1px solid black;
+    border-top: 0px;
+    border-right: 0px;
+}
+
+#chicken{
+    background: palevioletred;
+}
+#beef{
+    background: red;
+}
+
+#sushi{
+    background:rgb(240, 183, 79);
+}
+.text{
+    padding: .5rem;
+    padding-top: 3rem;
+    text-align: left;
+}
+/*mobile view*/
+@media (min-width:767px){
+    
+    .col-sm-12{
+  width: 100%;
+    }
+}
+
+/*tablet view*/
+@media (min-width:769px) and (max-width:991px){
+    
+ .col-md-6{
+  width: 46%;
+  float: left;
+  margin: 0 .5rem 1rem 1rem;
+   text-align: center;
+}
+    .col-md-12{
+        width: 95%;
+        clear:both;
+        margin-left: 1rem;
+
+    }
+}
+
+/*desktop view*/
+@media (min-width:992px){
+    .col-lg-4{
+     width: 31%;
+     float: left;
+    margin: 1rem .5rem 1.5rem .5rem;
+    text-align: center;
+    }
+    .menu{
+        width: 100%;
+        margin-left: 1rem;
+    }
+    }
