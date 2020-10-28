@@ -4,102 +4,100 @@
     box-sizing: border-box;
 }
 body{
-    font-size: 12px;
+    font-size: 16px;
     font-family: 'Baloo Chettan 2', cursive;
     
 }
-#menu{
-    margin: 3rem ;
+main{
+    margin: 2rem auto;
     line-height: 1.3rem;
-    width: 90%;
+    width: 98%;
     text-align: center;
-
 }
-.menu-heading{
-    font-size: 2rem;
+.heading{
+    font-size: 175%;
     text-align: center;
     margin: 2rem auto;
     word-spacing: 0.6rem;
     margin-bottom: 3rem;
 }
-.text{
+
+section{
     background: grey; 
     margin: 2rem;
     margin-top: 0rem;
-    padding: 2rem;
     padding-top: 0rem;
-    width: 90%;
-    font-size: .8rem;
-    font-weight: bolder;
+    font-weight: 600;
     border: 2px solid black;
     position: relative;
     display: inline-block
 }
-
-.pin{
-    padding-top: 3rem;
-}
-.left1,.left2,.left3{
+#chicken,#beef,#sushi{
     margin: 0rem;
     margin-bottom: 1rem;
-    width: 40%;
     padding:0.4rem 2rem 0.5rem 2rem;
-    font-size: 1.2rem;
-    background: palevioletred;
+    font-size: 125%;
+    width: 40%;
     display: inline-block;
     position: absolute;
-    right: 0rem;
+    right: 0;
+    top: 0;
     text-align: center;
     border: 1px solid black;
     border-top: 0px;
     border-right: 0px;
 }
 
-.left2{
+#chicken{
+    background: palevioletred;
+}
+#beef{
     background: red;
 }
 
-.left3{
+#sushi{
     background:rgb(240, 183, 79);
 }
+.text{
+    padding: .5rem;
+    padding-top: 3rem;
+    text-align: left;
+}
+/*mobile view*/
+@media (min-width:767px){
+    
+    .col-sm-12{
+  width: 100%;
+    }
+}
 
+/*tablet view*/
 @media (min-width:769px) and (max-width:991px){
     
-    .menu1{
-  width: 43.5%;
+ .col-md-6{
+  width: 46%;
   float: left;
-  margin-right: 0rem;
-    }
-    .menu2{
-        width: 43.5%;
-        float: right;
-        margin-left: 0rem;
-    }
-    .menu3{
-        clear: both;
-        width: 94%;
+  margin: 0 .5rem 1rem 1rem;
+   text-align: center;
+}
+    .col-md-12{
+        width: 95%;
+        clear:both;
+        margin-left: 1rem;
+
     }
 }
 
+/*desktop view*/
 @media (min-width:992px){
-    .text{
-
-        margin: 1rem 1.2rem 1.5rem 1.2rem;
+    .col-lg-4{
+     width: 31%;
+     float: left;
+    margin: 1rem .5rem 1.5rem .5rem;
+    text-align: center;
     }
-    .menu1{
-  width: 29%;
-  float: left;
-  margin-right: 0rem;
+    .menu{
+        width: 100%;
+        margin-left: 1rem;
     }
-    .menu2{
-        width: 29%;
-        float: left;
-        margin-right: 0rem;
-        
     }
-    .menu3{
-    float: left;
-        width: 29%;
-    }
-}
-
