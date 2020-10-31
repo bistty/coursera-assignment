@@ -1,0 +1,69 @@
+
+body{
+    font-size: 16px;
+    font-family: 'Baloo Chettan 2', cursive;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background: #727271;
+    padding: 0rem;
+    
+}
+.navbar-brand{
+    font-size: 2rem;
+}
+
+
+.navbar-nav{
+ justify-content: center; 
+ border:1px solid #5f605d;
+ width: 100%;
+ margin: 0px;
+ background: white;
+
+  
+    
+}
+.nav-link{
+    display: block;
+    text-align: center;
+    background: white;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+
+
+}
+.nav-item{
+    border-bottom:1px solid #5f605d;
+
+}
+
+
+section{
+    background: grey; 
+    box-shadow: 0 1px 5px 1px #cccccc;
+    margin: 5px;
+    
+}
+
+section a{
+    text-decoration: underline;
+    font-size: 1.3rem;
+}
+/********** medium and large **********/
+@media (min-width: 768px){
+ .col-md-4{flex: 30%;
+} 
+ .navbar-nav{display: none;} 
+ 
+}
+/********** Small devices only **********/
+@media (min-width: 576px) and (max-width: 767px){
+    .col-sm-6{ flex: 40%;
+    height: 1000px;}
+    .navbar-nav{display: none;} 
+}
